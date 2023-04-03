@@ -15,4 +15,4 @@ jobs:
         uses: joonvena/robotframework-docker-action@v1.0
         with:
           robot_tests_dir: tests
-          robot_reports_dir: reports
+          robot_reports_dir: /opt/robotframework/reports/report.html
