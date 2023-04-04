@@ -4,7 +4,7 @@ Documentation    Bitfinex
 Library    SeleniumLibrary    timeout=10s    implicit_wait=5s
 
 *** Variables ***
-${home_page_url}    https://www.staging.bitfinex.com/
+${home_page_url}    https://www.bitfinex.com/
 ${ico_table_ticker_search}    //div[@role='tablist']//a[@class='landing-tickers__search']
 ${txt_table_ticker_search}    //div[@class='bp3-input-group landing-tickers__search-group']//input[@placeholder='Search']
 ${cel_first_result}    //td[@class='symbol-col symbol-cell']
@@ -25,5 +25,5 @@ Bitfinex_01
     Click Element    ${cel_first_result}
     Wait Until Element Is Visible    ${lbl_ticker_on_ticker_details}
     ${page_url}    Get Location
-    Should Be Equal    ${page_url}    https://bfx-ui-trading.staging.bitfinex.com/t/BTC:USD?demo=true
+    Should Be Equal    ${page_url}    https://trading.bitfinex.com/t/LEO:USD?demo=true
     Close All Browsers
