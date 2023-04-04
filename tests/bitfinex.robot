@@ -25,5 +25,5 @@ Bitfinex_01
     Click Element    ${cel_first_result}
     Wait Until Element Is Visible    ${lbl_ticker_on_ticker_details}
     ${page_url}    Get Location
-    Should Be Equal    ${page_url}    https://trading.bitfinex.com/t/LEO:USD?demo=true
+    Should Be Equal    ${page_url}    https://trading.bitfinex.com/t/LEO:USD?type=exchange
     Close All Browsers
